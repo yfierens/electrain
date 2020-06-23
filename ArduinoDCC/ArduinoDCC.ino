@@ -66,6 +66,7 @@ void sweepServo()
 }
 
 void loop() {
+  //read serial input : 0 = minAngle ; 1 = maxAngle
   while (Serial.available() > 0) {
     int pos = Serial.parseInt();
     if (Serial.read() == '\n') {
